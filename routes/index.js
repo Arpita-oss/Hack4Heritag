@@ -50,10 +50,6 @@ router.get('/geoLocation', (req, res) => {
   res.render('geoLocation');
 });
 
-router.get('/heritage', (req, res) => {
-  res.render('show');
-});
-
 router.post('/heritage', (req, res) => {
   const { latitude, longitude } = req.body;
   console.log(`Received location: Latitude - ${ latitude }, Longitude - ${ longitude }`);
